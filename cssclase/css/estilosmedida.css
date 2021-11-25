@@ -1,0 +1,39 @@
+body {
+    margin: 0.5in;
+}
+
+/* Cuerpo con margen de media pulgada */
+h1 {
+    line-height: 2cm;
+}
+
+/* h1 con un interlineado de 2 cms */
+p {
+    word-spacing: 4mm;
+}
+
+/* Espacido entre palabras 4 milímetros entre si */
+a {
+    font-size: 18pt
+}
+
+/* Enlaces con tamaño de letra de 18 puntos */
+span {
+    font-size: 1pc
+}
+
+/* Los <span> con tamaño de letra de 1 pica */
+p {
+    font-size: 32px;
+    margin: 0.5em;
+}
+
+div#contenido {
+    width: 600px;
+    background-color: yellow;
+}
+
+div.principal {
+    width: 80%;
+    background-color: blue;
+}

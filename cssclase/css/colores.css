@@ -1,0 +1,39 @@
+
+
+/* coloreao el titulo */
+#titulo{
+    color: cadetblue;
+}
+/*Coloreo el 1º strong del 1º parrafo || "titulo de fila 2" || "columna1 columna 2 del foot*/
+p strong, a[href="#"], tbody tr+tr th, tfoot th{
+    color:red;
+}
+/*Coloreo el 2º titulo || Frase cursiva dentro de otra "aliquan non" || "titulo de la tabla"*/
+#subtitulo, a[href="#"] em,caption{
+    color:rgb(42, 93, 204);
+}
+/*Coloreo "frase 1º segunda palabra"|| "columna 1 columna 2 titulo fila 1 || 3º fila "purus ipsum" */
+.destacado, th[class=especial],tr td strong{
+    color: orange;
+}
+/*Coloreo el span que tiene ID de la 2º tabla*/
+#especial{
+    color:hotpink;
+}
+/*Coloreo el texto "porttitor purus ac elit"*/
+p .especial{
+    color:blueviolet;
+}
+/*Coloreo las celdas internas || La ultima frase coloreada*/
+tr td, #adicional a{
+    color:green;
+}
+/*Coloreo el ultimo parrafo*/
+#adicional{
+    color:olive;
+}
+/*Coloreo los bordes de la tabla*/
+table,th,tr,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
