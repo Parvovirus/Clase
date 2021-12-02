@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="UTF-8" />
+            <title>DOM</title>
+            <script language="javascript">
+                function insertar() {
+                    var textoNodo = window.prompt(" Escriba el texto del nuevo elemento: ");
+                    var etiqueta = document.createElement("li");
+                    var contenido = document.createTextNode(textoNodo);
+                    etiqueta.appendChild(contenido);
+
+                    document.getElementById("miLista").appendChild(etiqueta);
+                }
+                function borrar() {
+                    miLista.removeChild(document.getElementById("miLista").lastChild);
+                }
+            </script>
+        </head>
+
+        <body>
+            <ul id="miLista">
+                <li> Primer elemento de la lista</li>
+            </ul>
+            <input type="button" value="Añadir Elemento" onclick="insertar();" />
+            <input type="button" value="Borrar Elemento" onclick="borrar();" />
+        </body>
+    </html>

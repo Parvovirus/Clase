@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>DOM</title>
+    <script language="javascript">
+        function saludar() {
+            var nombre = document.getElementsByName("nombre")[0];
+            //Creo el elemento "p"
+            var parrafo = document.createElement("p");
+            //Creo el elemento contenido con el valor del nombre introducido.
+            var contenido = document.createTextNode("Hola " + nombre.value);
+            //Meto el contenido dentro de "p"
+            parrafo.appendChild(contenido);
+            //Meto el parrafo "p" dentrode body.
+            document.body.appendChild(parrafo);
+
+            //alert("Hola " + nombre.value);
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <label>Nombre: </label>
+    <input type="text" name="nombre">
+    <br>
+    <br>
+    <br>
+    <input type="button" value="Saludar" onclick="saludar();">
+
+</body>
+
+</html>
